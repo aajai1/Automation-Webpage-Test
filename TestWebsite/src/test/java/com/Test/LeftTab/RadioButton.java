@@ -1,6 +1,7 @@
 package com.Test.LeftTab;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.utils.DriverKit;
@@ -12,7 +13,8 @@ public class RadioButton {
 	public static void radioButton() throws InterruptedException  {
 		WebDriver driver = DriverKit.driverTool();
 		SourceLink.source(driver);
-		LocatorsForElement.IdLocator(driver, "male").click();
+		WebElement maleButton =LocatorsForElement.IdLocator(driver, "male");
+		maleButton.click();
 		for (int i=0;i<2;i++) {
 			LocatorsForElement.IdLocator(driver, "sunday").click();
 			LocatorsForElement.IdLocator(driver, "monday").click();
@@ -23,6 +25,10 @@ public class RadioButton {
 			LocatorsForElement.IdLocator(driver, "saturday").click();
 			Thread.sleep(3000);
 		}
+		if(maleButton.isSelected()) {
+			System.out.println("Button Test  case Passed😍");
+		} else System.out.println("Button Test case Failed😒");
+		
 		driver.close();
 	}
 
