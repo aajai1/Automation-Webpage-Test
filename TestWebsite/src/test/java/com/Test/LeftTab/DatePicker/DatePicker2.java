@@ -9,7 +9,7 @@ import com.utils.SourceLink;
 
 public class DatePicker2 {
 	@Test
-	public void datePick2() {
+	public void datePick2() throws InterruptedException {
 		WebDriver driver = DriverKit.driverTool();
 		SourceLink.source(driver);
 		LocatorsForElement.IdLocator(driver, "txtDate").click();
@@ -27,6 +27,7 @@ public class DatePicker2 {
 		if(dob.equals("12/11/2001")) {
 			System.out.println("Tess case Passed😍");
 		} else System.out.println("Tess case Failed😒");
+		Thread.sleep(3000);
 		driver.quit();
 	}
 

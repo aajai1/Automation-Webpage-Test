@@ -28,7 +28,7 @@ public class RadioButton {
 		if(maleButton.isSelected()) {
 			System.out.println("Button Test  case Passed😍");
 		} else System.out.println("Button Test case Failed😒");
-		
+		Thread.sleep(3000);
 		driver.close();
 	}
 

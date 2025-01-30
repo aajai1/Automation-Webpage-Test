@@ -1,11 +1,6 @@
 package com.Test.LeftTab.DatePicker;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.utils.DriverKit;
@@ -14,7 +9,7 @@ import com.utils.SourceLink;
 
 public class DatePicker1 {
 	@Test
-	public void pickDate1() {
+	public void pickDate1() throws InterruptedException {
 		WebDriver driver = DriverKit.driverTool();
 		SourceLink.source(driver);
 		LocatorsForElement.IdLocator(driver, "datepicker").click();
@@ -41,6 +36,7 @@ public class DatePicker1 {
 		
 		
 		LocatorsForElement.XpathLocator(driver, "//a[text()='12']").click();
+		Thread.sleep(3000);
 		driver.quit();
 		
 }

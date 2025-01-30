@@ -12,13 +12,14 @@ import com.utils.SourceLink;
 
 public class CountrySelector {
 	@Test
-	public static void FillForm() {
+	public static void FillForm() throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		SourceLink.source(driver);
 		WebElement countryIndia=LocatorsForElement.IdLocator(driver, "country");
 		Actions action = new Actions(driver);
 		action.sendKeys(countryIndia, "I").sendKeys(Keys.ENTER).perform();
-		
+		Thread.sleep(3000);
+		driver.quit();
 	}
 
 }

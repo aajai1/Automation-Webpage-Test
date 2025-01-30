@@ -1,12 +1,14 @@
 package com.Test.LeftTab;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
 import com.utils.DriverKit;
 import com.utils.LocatorsForElement;
 import com.utils.SourceLink;
 
 public class DetailsFill {
+	@Test
 	public static void fillDetails() throws InterruptedException {
 		WebDriver driver = DriverKit.driverTool();
 		SourceLink.source(driver);
@@ -15,6 +17,7 @@ public class DetailsFill {
 		LocatorsForElement.IdLocator(driver, "phone").sendKeys("1573962840");
 		LocatorsForElement.IdLocator(driver, "textarea").sendKeys("no 87, This street,\n That area,This City \n257498");
 		Thread.sleep(3000);
+		driver.quit();
 		
 		
 	}
