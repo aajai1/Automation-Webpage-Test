@@ -18,7 +18,7 @@ public class CountrySelector {
 		WebElement countryIndia=LocatorsForElement.IdLocator(driver, "country");
 		Actions action = new Actions(driver);
 		action.sendKeys(countryIndia, "I").sendKeys(Keys.ENTER).perform();
-		LocatorsForElement.IdLocator(driver, "colors");
+		
 	}
 
 }
