@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Test.LeftTab.UploalFiles.UploadFile">
+      <class name="com.Test.LeftTab.Tables.StaticTables">
         <methods>
-          <include name="uploadFile"/>
+          <include name="staticTables"/>
         </methods>
-      </class> <!-- com.Test.LeftTab.UploalFiles.UploadFile -->
+      </class> <!-- com.Test.LeftTab.Tables.StaticTables -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
