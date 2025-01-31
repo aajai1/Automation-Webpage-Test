@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Test.LeftTab.DatePicker.DatePicker2">
+      <class name="com.Test.LeftTab.UploalFiles.UploadFile">
         <methods>
-          <include name="datePick2"/>
+          <include name="uploadFile"/>
         </methods>
-      </class> <!-- com.Test.LeftTab.DatePicker.DatePicker2 -->
+      </class> <!-- com.Test.LeftTab.UploalFiles.UploadFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
