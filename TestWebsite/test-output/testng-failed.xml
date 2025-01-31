@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Test.LeftTab.Tables.StaticTables">
+      <class name="com.Test.LeftTab.MouseHover">
         <methods>
-          <include name="staticTables"/>
+          <include name="mouseHover"/>
         </methods>
-      </class> <!-- com.Test.LeftTab.Tables.StaticTables -->
+      </class> <!-- com.Test.LeftTab.MouseHover -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
