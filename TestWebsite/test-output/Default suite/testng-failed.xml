@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Test.LeftTab.DoubleClick">
+      <class name="com.Test.LeftTab.CountrySelector">
         <methods>
-          <include name="doubleClick"/>
+          <include name="FillForm"/>
         </methods>
-      </class> <!-- com.Test.LeftTab.DoubleClick -->
+      </class> <!-- com.Test.LeftTab.CountrySelector -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
